@@ -1,0 +1,519 @@
+/* 
+Created on : 30/10/2014, 11:10:50 PM
+Author : juank
+*/
+@font-face {
+font-family: 'Franklin Gothic Book';
+font-style: normal;
+font-weight: normal;
+src: local('Franklin Gothic Book'), url('../libs/font/franklin-gothic/FRABK.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Franklin Gothic Book Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Franklin Gothic Book Italic'), url('../libs/font/franklin-gothic/FRABKIT.woff') format('woff');
+}
+
+*{
+margin:0;
+text-decoration: none;
+padding: 0;
+}
+html{
+/*background: url(../img/fondo_mosaico.png);*/
+background:black;
+}
+#content_principal{
+width: 950px;
+/*overflow: hidden;*/
+margin: 0 auto;
+}
+header{
+margin-top: 10px;
+text-align: center;
+}
+#slider_principal{
+margin:40px auto;
+width: 800px;
+height: 380px;
+/*background: blue;*/
+}
+footer{
+text-align: center;
+
+width: 1050px;
+margin:50px auto;
+margin-bottom:50px;
+}
+#barra_footer{
+padding: 20px;
+float: left;
+width: 910px;
+font-family: 'Franklin Gothic Book';
+/* margin:70px auto; */
+background: #015f91;
+}
+#redes{
+float: right;
+width: 50px;
+/* background: blue; */
+/* margin-left: 10px; */
+}
+.item_redes{
+cursor: pointer;
+float: right;
+width: 30px;
+height: 30px;
+margin-bottom:10px;
+}
+.fb{
+background: url(../img/fb.png);
+}
+.tw{
+background: url(../img/tw.png);
+}
+.yt{
+background: url(../img/yt.png);
+}
+.fb:hover{
+background: url(../img/fb_h.png);
+}
+.tw:hover{
+background: url(../img/tw_h.png);
+}
+.yt:hover{
+background: url(../img/yt_h.png);
+}
+#barras{
+
+}
+.columnas{
+font-size:12px;
+vertical-align: top;
+display: inline-block;
+margin-left: 50px;
+margin-right: 50px;
+color:black;
+text-align: center;
+}
+.ciudad{
+color:black;
+/*font-weight: bold;*/
+margin-bottom:10px;
+font-size:1.3em;
+}
+#paneles{
+width: 800px;    
+position:relative;
+margin:60px auto;
+overflow: hidden;
+}
+#panel_i{
+float: left;
+width: 400px;
+}
+#panel_d{
+float: right;
+width: 400px;
+}
+nav{
+font-family: 'Franklin Gothic Book';
+margin-top:30px;
+display:block;
+}
+
+
+
+.producto_etiqueta, .producto_etiqueta_generic{
+width: 450px;
+height: 218px;
+/*background: pink;*/
+position: absolute;
+margin-left: -100px;
+margin-top: 120px;
+font-family: impact;
+color:#bec0c2;
+font-size: 7em;
+-ms-transform: rotate(-90deg); /* IE 9 */
+-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+-moz-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+transform: rotate(-90deg);
+}
+.producto_etiqueta_generic{
+float: left;
+/*background: blue;*/
+}
+
+.producto_etiqueta a, .subproducto_etiqueta a{
+color:#bec0c2;
+}
+.producto_etiqueta a:hover, .subproducto_etiqueta a:hover{
+color:#ececec;
+}
+
+
+#slider_stone{
+float: right;
+width: 218px;
+height: 450px;
+/*background: yellow;*/
+}
+#content_productos{
+/* background: red; */
+overflow: hidden;
+margin: 60px auto;
+/* width: 1000px; */
+}
+.producto{
+width: 400px;
+float: left;
+}
+.izq{
+/* float:left; */
+}
+.der{
+/*float:right;*/
+}
+.slider1{
+
+}
+#slider_generic{
+float: right;
+width: 800px;
+height: 450px;
+
+}
+
+
+.subproducto_etiqueta{
+width: 211px;
+height: 31px;
+/*background: pink;*/
+position: absolute;
+margin-left: 127px;
+margin-top: -122px;
+font-family: impact;
+color:#bec0c2;
+font-size: 1.6em;
+-ms-transform: rotate(-90deg); /* IE 9 */
+-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+-moz-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+transform: rotate(-90deg);
+}
+.producto_generic{
+margin-right:6px;    
+float:left;
+/*background: chartreuse;*/
+width: 270px;
+}
+#content_productos_total{
+margin-top: 60px;
+overflow: hidden;
+width: 1000px;
+margin-left: -50px;
+/*background:purple;*/
+}
+#content_productos_viewer{
+margin-top: 60px;
+overflow: hidden;
+margin-left: -120px;
+
+/*background:purple;*/
+}
+#content_productos_generic{
+float:right;
+width: 830px;
+/*background: red;*/
+overflow: hidden;
+height: 454px;
+}
+
+#content_datos{
+margin-top: 60px;
+width: 800px;
+/*background: red;*/
+margin-left: auto;
+margin-right: auto;
+text-align:justify;
+}
+
+#content_second_generic{
+    font-family: 'Franklin Gothic Book';
+color:white;   
+}
+#content_second_generic_viewer{
+margin: 0 auto;
+font-family: 'Franklin Gothic Book';
+color:white;       
+width: 1000px;    
+}
+
+
+nav ul {
+	display:block;
+	z-index:999999;
+}
+nav ul li {
+/*margin-left: 5px;*/
+/*margin-right: 5px;*/
+width: 170px;
+background: #015f91;
+	color:white;
+	display:inline-block;
+	padding:5px;
+
+	position:relative;
+}
+nav ul li:hover {
+	background: gray;
+}
+
+nav ul li a {
+	text-decoration:none;
+}
+nav ul li a:link, nav ul li a:visited {
+	color:white;
+	display:inline-block;
+	position:relative;
+}
+nav ul li a:hover, nav ul li a:active {
+}
+
+nav ul li.current {
+background:gray;
+}
+nav ul li.current a {
+	cursor: default;
+}
+
+nav ul li.current ul li a {
+	cursor:pointer;
+}
+
+/*===== sub_menu Style =======*/
+nav ul li ul.sub_menu {
+    
+	position:absolute;
+	top:28px;
+	left:-5px;
+	margin:0;
+	padding:0;
+
+	border-top:5px solid #fff;
+	display:none;
+	z-index:999999;
+    -moz-box-shadow: 0px 6px 7px #121012;
+    -webkit-box-shadow: 0px 6px 7px #121012;
+    box-shadow: 0px 6px 7px #121012;
+}
+
+
+nav ul li ul.sub_menu li a {
+	white-space: nowrap;
+	
+
+	color:white;
+}
+nav ul li ul.sub_menu li a:hover {
+
+}
+nav ul li ul.sub_menu li a.subCurrent {
+	color:#e25d29;
+	cursor:default;
+}
+nav ul li ul.sub_menu li a.subCurrent:hover {
+	background:none;
+}
+
+
+
+.contact_form{ margin:70px 60px;}
+
+
+.contact_form h2, .contact_form label, .form_hint, .required_notification {font-family:'Franklin Gothic Book'; color:white}
+/* === Remove input autofocus webkit === */
+*:focus {outline: none;}
+
+/* === Form Typography === */
+
+.form_hint, .required_notification {font-size: 14px;}
+
+/* === List Styles === */
+.contact_form ul {
+    width:750px;
+    list-style-type:none;
+	list-style-position:outside;
+	margin:0px;
+	padding:0px;
+}
+.contact_form li{
+	padding:12px; 
+	border-bottom:1px solid #eee;
+	position:relative;
+} 
+.contact_form li:first-child, .contact_form li:last-child {
+	border-bottom:1px solid #777;
+}
+
+/* === Form Header === */
+.contact_form h2 {
+	margin:0;
+	display: inline;
+}
+.required_notification {
+	color:yellow; 
+	margin:5px 0 0 0; 
+	display:inline;
+	float:right;
+}
+
+/* === Form Elements === */
+.contact_form label {
+	width:150px;
+	margin-top: 3px;
+	display:inline-block;
+	float:left;
+	padding:3px;
+}
+.contact_form input {
+	height:20px; 
+	width:220px; 
+	padding:5px 8px;
+}
+.contact_form textarea {padding:8px; width:300px;}
+.contact_form button {margin-left:156px;}
+
+	/* form element visual styles */
+	.contact_form input, .contact_form textarea { 
+		border:1px solid #aaa;
+		box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+		border-radius:2px;
+		padding-right:30px;
+		-moz-transition: padding .25s; 
+		-webkit-transition: padding .25s; 
+		-o-transition: padding .25s;
+		transition: padding .25s;
+	}
+	.contact_form input:focus, .contact_form textarea:focus {
+		background: #fff; 
+		border:1px solid #555; 
+		box-shadow: 0 0 3px #aaa; 
+		padding-right:70px;
+	}
+
+/* === HTML5 validation styles === */	
+.contact_form input:required, .contact_form textarea:required {
+	background: #fff url(images/red_asterisk.png) no-repeat 98% center;
+}
+.contact_form input:required:valid, .contact_form textarea:required:valid {
+	background: #fff url(images/valid.png) no-repeat 98% center;
+	box-shadow: 0 0 5px #5cd053;
+	border-color: #28921f;
+}
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+	background: #fff url(images/invalid.png) no-repeat 98% center;
+	box-shadow: 0 0 5px yellow;
+	border-color: #b03535
+}
+
+/* === Form hints === */
+.form_hint {
+    
+	background: yellow;
+	border-radius: 3px 3px 3px 3px;
+	color: black;
+	margin-left:8px;
+	padding: 1px 6px;
+	z-index: 999; /* hints stay above all other elements */
+	position: absolute; /* allows proper formatting if hint is two lines */
+	display: none;
+}
+.form_hint::before {
+	content: "\25C0";
+	color:yellow;
+	position: absolute;
+	top:1px;
+	left:-6px;
+}
+.contact_form input:focus + .form_hint {display: inline;}
+.contact_form input:required:valid + .form_hint {background: #28921f;}
+.contact_form input:required:valid + .form_hint::before {color:#28921f;}
+	
+/* === Button Style === */
+button.submit {
+	background-color: #015f91;
+	background: -webkit-gradient(linear, left top, left bottom, from(#015f91), to(#015fff));
+	background: -webkit-linear-gradient(top, #015f91, #015fff);
+	background: -moz-linear-gradient(top, #015f91, #015fff);
+	background: -ms-linear-gradient(top, #015f91, #015fff);
+	background: -o-linear-gradient(top, #015f91, #015fff);
+	background: linear-gradient(top, #015f91, #015fff);
+	border: 1px solid #509111;
+	border-bottom: 1px solid #5b992b;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	box-shadow: inset 0 1px 0 0 #9fd574;
+	-webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+	-moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+	-ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+	-o-box-shadow: 0 1px 0 0 #9fd574 inset;
+	color: white;
+	font-weight: bold;
+	padding: 6px 20px;
+	text-align: center;
+	text-shadow: 0 -1px 0 #396715;
+}
+button.submit:hover {
+	opacity:.85;
+	cursor: pointer; 
+}
+button.submit:active {
+	border: 1px solid #20911e;
+	box-shadow: 0 0 10px 5px #356b0b inset; 
+	-webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+	-moz-box-shadow: 0 0 10px 5px #356b0b inset;
+	-ms-box-shadow: 0 0 10px 5px #356b0b inset;
+	-o-box-shadow: 0 0 10px 5px #356b0b inset;
+}
+
+#pop-up{
+padding:12px;
+/*width:380px;*/
+border-radius:10px;
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+position:absolute;
+top:10%;
+left:-50%;
+z-index:2;
+display:none;
+opacity:0;
+background-color:white;
+color:black;
+border:1px solid black;
+}
+
+#contenedor_barra_videos{
+margin:40px auto;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+display:table;    
+
+overflow: hidden;
+background-color: white;
+-webkit-box-shadow: 3px 3px 15px #000;
+-moz-box-shadow: 10px 10px 5px #000;
+filter: shadow(color=#000000, direction=135, strength=2);    
+margin-bottom: 50px;;
+}
+#barra_videos{
+
+margin: 40px;
+}
